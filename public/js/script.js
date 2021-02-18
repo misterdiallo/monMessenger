@@ -19,7 +19,7 @@ socket.on('userSujet', ({ sujetname, userslist }) => {
 function listUser(users) {
     userlist.innerHTML = `${
         users.map(user => 
-            `<li class="user list-group-item bg-transparent text-white fw-bold "><i class="bi bi-award-fill "></i> ${user.user} </li>` )
+            `<li class="user list-group-item bg-transparent text-white fw-bold "><i class="userIcon bi bi-award-fill "></i> ${user.user} </li>` )
             .join('')
     }`;
 };
