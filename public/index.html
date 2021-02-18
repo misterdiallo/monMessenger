@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accueil - Mon Messenger </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-center">
+    <main class="form-signin">
+        <form action="chat.html" class="bg-primary bg-gradient text-white p-5">
+            <div class="mb-4">
+                <img class="mb-4" src="" alt="logo" width="72" height="57">
+                <h1 class="h1 mb-3 fw-normal text-uppercase">Mon Messenger</h1>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="username" class="form-label">Nom d'utilisateur</label>
+                <input type="text" id="username" name="user" class="form-control username" placeholder="Votre identifiant" required autofocus>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="sujet" class="form-label">Sujet de Discussion</label>
+                <select name="sujet" id="sujet" class="form-control sujet" required>
+                    <option value="">--Choisissez--</option>
+                    <option value="Programmation">Programmation</option>
+                    <option value="Amour">Amour</option>
+                    <option value="Ventes">Ventes</option>
+                    <option value="Politique">Politique</option>
+                    <option value="Social">Social</option>
+                    <option value="Autres">Autres...</option>
+                </select>
+            </div>
+            <button class="w-100 btn btn-lg btn-danger mt-4" type="submit">Entrer </button>
+            <p class="mt-5 mb-1 text-muted">&copy; TheGeniusDiallo</p>
+        </form>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
